@@ -83,11 +83,13 @@
             $root.click();
         }
 
-        clickTarget.on("click", function(evt) {
+        clickTarget.bind("mousewheel DOMMouseScroll", function(evt) {
 
             // closeclick not available here...
             if(settings.closeclick && zoomTarget.hasClass("selectedZoomTarget")) {
-                settings.root.click();
+                console.log("Clicking target!")
+                settings.root.trigger("mousewheel");
+                settings.root.trigger("DOMMouseScroll");
             } else {
                 zoomTarget.zoomTo(settings);
             }

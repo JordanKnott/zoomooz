@@ -1,10 +1,8 @@
 ## Information
 
-Zoomooz is an easy-to-use jQuery plugin for making any web page element zoom.
 
-Basically, just have a look at the examples and start hacking away.
+A fork of [zoomooz](https://github.com/jaukia/zoomooz) that uses scroll based events rather than clicks.
 
-For more information and usage, see: http://jaukia.github.io/zoomooz/
 
 ## Building
 
